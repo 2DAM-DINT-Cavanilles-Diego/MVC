@@ -42,7 +42,17 @@ public class Controlador implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        
+        //Ahora invocamos al modelo y establecemos los set de las propiedades
+        model.setNumeroUno(Integer.parseInt(view.txtNumeroUno.getText()));
+        model.setNumeroDos(Integer.parseInt(view.txtNumeroDos.getText()));
+        
+        //Ya enviados los valores ahora invocamos el método de multiplicar
+        //Al método no enviamos nada pues ya lo hemos encapsulado
+        model.multiplicar();
+        
+        //Mostramos el resultado en la caja de texto del resultado
+        view.txtResultado.setText(String.valueOf(model.getResultado()));
     }
 
 }

@@ -44,7 +44,7 @@
                   <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
                   <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-                  <Component id="txtFieldDos" min="-2" pref="71" max="-2" attributes="0"/>
+                  <Component id="txtNumeroDos" min="-2" pref="71" max="-2" attributes="0"/>
                   <EmptySpace pref="40" max="32767" attributes="0"/>
                   <Component id="btnMultiplicar" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
@@ -62,7 +62,7 @@
                   <EmptySpace min="-2" pref="116" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="txtNumeroUno" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="txtFieldDos" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtNumeroDos" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="btnMultiplicar" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
@@ -82,10 +82,13 @@
             <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
           </AuxValues>
         </Component>
-        <Component class="javax.swing.JTextField" name="txtFieldDos">
+        <Component class="javax.swing.JTextField" name="txtNumeroDos">
           <Properties>
             <Property name="toolTipText" type="java.lang.String" value=""/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtNumeroDosActionPerformed"/>
+          </Events>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
           </AuxValues>
@@ -99,11 +102,17 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Multiplicar"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnMultiplicarActionPerformed"/>
+          </Events>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
           </AuxValues>
         </Component>
         <Component class="javax.swing.JTextField" name="txtResultado">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtResultadoActionPerformed"/>
+          </Events>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
           </AuxValues>

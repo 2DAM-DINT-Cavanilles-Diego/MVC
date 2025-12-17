@@ -30,7 +30,7 @@ public class Vista extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         txtNumeroUno = new javax.swing.JTextField();
-        txtFieldDos = new javax.swing.JTextField();
+        txtNumeroDos = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         btnMultiplicar = new javax.swing.JButton();
         txtResultado = new javax.swing.JTextField();
@@ -43,11 +43,27 @@ public class Vista extends javax.swing.JFrame {
             }
         });
 
-        txtFieldDos.setToolTipText("");
+        txtNumeroDos.setToolTipText("");
+        txtNumeroDos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNumeroDosActionPerformed(evt);
+            }
+        });
 
         jLabel1.setText("x");
 
         btnMultiplicar.setText("Multiplicar");
+        btnMultiplicar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnMultiplicarActionPerformed(evt);
+            }
+        });
+
+        txtResultado.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtResultadoActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -59,7 +75,7 @@ public class Vista extends javax.swing.JFrame {
                 .addGap(29, 29, 29)
                 .addComponent(jLabel1)
                 .addGap(33, 33, 33)
-                .addComponent(txtFieldDos, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(txtNumeroDos, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 40, Short.MAX_VALUE)
                 .addComponent(btnMultiplicar)
                 .addGap(35, 35, 35))
@@ -74,7 +90,7 @@ public class Vista extends javax.swing.JFrame {
                 .addGap(116, 116, 116)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtNumeroUno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtFieldDos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtNumeroDos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel1)
                     .addComponent(btnMultiplicar))
                 .addGap(43, 43, 43)
@@ -99,6 +115,18 @@ public class Vista extends javax.swing.JFrame {
     private void txtNumeroUnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNumeroUnoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtNumeroUnoActionPerformed
+
+    private void txtNumeroDosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNumeroDosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNumeroDosActionPerformed
+
+    private void btnMultiplicarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMultiplicarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnMultiplicarActionPerformed
+
+    private void txtResultadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtResultadoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtResultadoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -129,7 +157,7 @@ public class Vista extends javax.swing.JFrame {
     public javax.swing.JButton btnMultiplicar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
-    public javax.swing.JTextField txtFieldDos;
+    public javax.swing.JTextField txtNumeroDos;
     public javax.swing.JTextField txtNumeroUno;
     public javax.swing.JTextField txtResultado;
     // End of variables declaration//GEN-END:variables
