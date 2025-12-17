@@ -41,8 +41,8 @@ public class Modelo {
     
     //Método para hacer la operación
     public int multiplicar(){
-        resultado = numeroUno * numeroDos;
-        return resultado;
+        this.resultado = this.numeroUno * numeroDos;
+        return this.resultado;
     }
            
     
